@@ -6,10 +6,8 @@
 private class MobileDeviceControllerTest {
 
   private static final String BLANK = '';
-  private static final String EMPTY_CONTACT_MESSAGE =
-      MobileDeviceController.EXCEPTION_EMPTY_CONTACT;
-  private static final String INVALID_CONTACT_ID_MESSAGE =
-      MobileDeviceController.INVALID_CONTACT_ID;
+  private static final String EMPTY_CONTACT_MESSAGE = MobileDeviceController.EXCEPTION_EMPTY_CONTACT;
+  private static final String INVALID_CONTACT_ID_MESSAGE = MobileDeviceController.INVALID_CONTACT_ID;
 
   @IsTest
   static void testFindMobileDeviceByContact_validId() {
@@ -39,7 +37,7 @@ private class MobileDeviceControllerTest {
       Test.stopTest();
       System.assert(false, 'Expected AuraHandledException for empty ID');
     }
-    catch (AuraHandledException e) {
+    catch (HandledException e) {
       System.assertEquals(EMPTY_CONTACT_MESSAGE, e.getMessage());
     }
   }
@@ -52,7 +50,7 @@ private class MobileDeviceControllerTest {
       Test.stopTest();
       System.assert(false, 'Expected AuraHandledException for invalid ID');
     }
-    catch (AuraHandledException e) {
+    catch (HandledException e) {
       System.assertEquals(INVALID_CONTACT_ID_MESSAGE, e.getMessage());
     }
   }

@@ -8,7 +8,7 @@ public with sharing class MobileDeviceController {
 
   @AuraEnabled
   public static List<MobileDevise__c> findMobileDeviceByContact(String contactId) {
-    if (String.isBlank(contactId)) throw new AuraHandledException(EXCEPTION_EMPTY_CONTACT);
+    if (String.isBlank(contactId)) throw new HandledException(EXCEPTION_EMPTY_CONTACT);
 
     try {
       Id validContactId = Id.valueOf(contactId);
@@ -18,8 +18,8 @@ public with sharing class MobileDeviceController {
           WHERE Contact__c = :validContactId
       ];
     }
-    catch (Exception e) {
-      throw new AuraHandledException(INVALID_CONTACT_ID);
+    catch (StringException e) {
+      throw new HandledException(INVALID_CONTACT_ID);
     }
   }
 }
