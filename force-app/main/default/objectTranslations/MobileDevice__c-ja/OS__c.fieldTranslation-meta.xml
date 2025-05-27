@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OS --></label>
+    <name>OS__c</name>
+    <picklistValues>
+        <masterLabel>Android</masterLabel>
+        <translation><!-- Android --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mac</masterLabel>
+        <translation><!-- Mac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows</masterLabel>
+        <translation><!-- Windows --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>iOS</masterLabel>
+        <translation><!-- iOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>iPadOS</masterLabel>
+        <translation><!-- iPadOS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

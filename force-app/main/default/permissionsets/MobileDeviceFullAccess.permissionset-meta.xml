@@ -3,7 +3,7 @@
     <description>MobileDeviceFullAccess</description>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MobileDevise__c.isPersonal__c</field>
+        <field>MobileDevice__c.isPersonal__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -14,12 +14,12 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>MobileDevise__c</object>
+        <object>MobileDevice__c</object>
         <viewAllFields>false</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>MobileDevise__c</tab>
+        <tab>MobileDevice__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
