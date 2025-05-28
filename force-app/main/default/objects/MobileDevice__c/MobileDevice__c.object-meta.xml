@@ -154,10 +154,9 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>MobileDevise</label>
-    <pluralLabel>MobileDevices</pluralLabel>
+    <label>MobileDevice</label>
     <nameField>
-        <label>MobileDevise</label>
+        <label>MobileDevice</label>
         <type>Text</type>
     </nameField>
     <searchLayouts></searchLayouts>

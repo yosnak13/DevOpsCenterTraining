@@ -3,11 +3,11 @@
     <fullName>Contact__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <description>参照先となる取引先責任者</description>
-    <inlineHelpText>テストで生成</inlineHelpText>
+    <inlineHelpText>何台でも保有可能</inlineHelpText>
     <label>取引先責任者</label>
     <referenceTo>Contact</referenceTo>
-    <relationshipLabel>MobileDevise</relationshipLabel>
-    <relationshipName>MobileDevise</relationshipName>
+    <relationshipLabel>MobileDevice</relationshipLabel>
+    <relationshipName>MobileDevice</relationshipName>
     <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

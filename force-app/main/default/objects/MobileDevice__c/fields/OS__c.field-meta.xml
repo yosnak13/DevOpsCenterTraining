@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>OS__c</fullName>
-    <description>OS</description>
+    <description>モバイルデバイスのOS</description>
     <label>OS</label>
     <required>true</required>
     <trackTrending>false</trackTrending>
@@ -34,11 +34,6 @@
                 <fullName>Others</fullName>
                 <default>false</default>
                 <label>Others</label>
-            </value>
-            <value>
-                <fullName>Windows</fullName>
-                <default>false</default>
-                <label>Windows</label>
             </value>
         </valueSetDefinition>
     </valueSet>
