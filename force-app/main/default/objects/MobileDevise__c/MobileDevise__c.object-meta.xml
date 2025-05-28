@@ -155,6 +155,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <label>MobileDevise</label>
+    <pluralLabel>MobileDevices</pluralLabel>
     <nameField>
         <label>MobileDevise</label>
         <type>Text</type>
