@@ -14,14 +14,14 @@ private class MobileDeviceControllerTest {
     Contact testContact = new Contact(LastName = 'Test Contact');
     insert testContact;
 
-    MobileDevise__c device = new MobileDevise__c(
+    MobileDevice__c device = new MobileDevice__c(
         Name = 'Test Device',
         Contact__c = testContact.Id
     );
     insert device;
 
     Test.startTest();
-    List<MobileDevise__c> results = MobileDeviceController.findMobileDeviceByContact(testContact.Id);
+    List<MobileDevice__c> results = MobileDeviceController.findMobileDeviceByContact(testContact.Id);
     Test.stopTest();
 
     System.assertNotEquals(0, results.size(), 'Should return at least one device');
