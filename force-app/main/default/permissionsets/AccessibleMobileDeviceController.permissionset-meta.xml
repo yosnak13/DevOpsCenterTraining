@@ -4,11 +4,7 @@
         <apexClass>MobileDeviceController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>MobileDeviceControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <description>MobileDeviceControllerへのアクセス権限</description>
+    <description>MobileDeviceControllerへのアクセス</description>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>MobileDeviceControllerAccess</label>
+    <label>AccessibleMobileDeviceController</label>
 </PermissionSet>
