@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>参照先となる取引先責任者</description>
+    <inlineHelpText>何台でも保有可能</inlineHelpText>
+    <label>取引先責任者</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>MobileDevice</relationshipLabel>
+    <relationshipName>MobileDevice</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
