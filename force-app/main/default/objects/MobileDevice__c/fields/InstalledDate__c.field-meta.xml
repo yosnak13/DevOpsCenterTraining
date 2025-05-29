@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InstalledDate__c</fullName>
+    <description>モバイル端末を導入した日。日付が不明名場合は厳格でなくてもいいため、不明な場合はM月1日付けでよい</description>
+    <label>導入日</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
