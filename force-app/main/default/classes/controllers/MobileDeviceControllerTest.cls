@@ -4,8 +4,8 @@
 
 @IsTest
 private class MobileDeviceControllerTest {
-
   private static final String BLANK = '';
+  private static final Date TODAY = Date.today();
   private static final String EMPTY_CONTACT_MESSAGE = MobileDeviceController.EXCEPTION_EMPTY_CONTACT;
   private static final String INVALID_CONTACT_ID_MESSAGE = MobileDeviceController.INVALID_CONTACT_ID;
 
@@ -15,18 +15,33 @@ private class MobileDeviceControllerTest {
     insert testContact;
 
     MobileDevice__c device = new MobileDevice__c(
-        Name = 'Test Device',
-        Contact__c = testContact.Id
+      Name = 'Test Device',
+      Contact__c = testContact.Id,
+      InstalledDate__c = TODAY
     );
     insert device;
 
     Test.startTest();
-    List<MobileDevice__c> results = MobileDeviceController.findMobileDeviceByContact(testContact.Id);
+    List<MobileDevice__c> results = MobileDeviceController.findMobileDeviceByContact(
+      testContact.Id
+    );
     Test.stopTest();
 
-    System.assertNotEquals(0, results.size(), 'Should return at least one device');
-    System.assertEquals(device.Id, results[0].Id, 'Returned device ID should match');
-    System.assertEquals(device.Name, results[0].Name, 'Returned device ID should match');
+    System.assertNotEquals(
+      0,
+      results.size(),
+      'Should return at least one device'
+    );
+    System.assertEquals(
+      device.Id,
+      results[0].Id,
+      'Returned device ID should match'
+    );
+    System.assertEquals(
+      device.Name,
+      results[0].Name,
+      'Returned device ID should match'
+    );
   }
 
   @IsTest
@@ -36,8 +51,7 @@ private class MobileDeviceControllerTest {
       MobileDeviceController.findMobileDeviceByContact(BLANK);
       Test.stopTest();
       System.assert(false, 'Expected AuraHandledException for empty ID');
-    }
-    catch (HandledException e) {
+    } catch (HandledException e) {
       System.assertEquals(EMPTY_CONTACT_MESSAGE, e.getMessage());
     }
   }
@@ -49,8 +63,7 @@ private class MobileDeviceControllerTest {
       MobileDeviceController.findMobileDeviceByContact('invalidId123');
       Test.stopTest();
       System.assert(false, 'Expected AuraHandledException for invalid ID');
-    }
-    catch (HandledException e) {
+    } catch (HandledException e) {
       System.assertEquals(INVALID_CONTACT_ID_MESSAGE, e.getMessage());
     }
   }
