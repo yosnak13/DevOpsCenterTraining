@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2 xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accountAccessLevel>All</accountAccessLevel>
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>南関東</description>
+    <name>南関東</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentTerritory>EastJapan</parentTerritory>
+    <territory2Type>SouthKanto</territory2Type>
+</Territory2>
