@@ -6,5 +6,9 @@
     <description>東日本</description>
     <name>東日本</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <ruleAssociations>
+        <inherited>false</inherited>
+        <ruleName>JapanRule</ruleName>
+    </ruleAssociations>
     <territory2Type>EastJapan</territory2Type>
 </Territory2>

@@ -7,5 +7,9 @@
     <name>北関東</name>
     <opportunityAccessLevel>Read</opportunityAccessLevel>
     <parentTerritory>EastJapan</parentTerritory>
+    <ruleAssociations>
+        <inherited>false</inherited>
+        <ruleName>NorthKantoRule</ruleName>
+    </ruleAssociations>
     <territory2Type>NorthKanto</territory2Type>
 </Territory2>
