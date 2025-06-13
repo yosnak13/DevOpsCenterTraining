@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+    <name>西日本製造業ルール</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>大阪</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>京都</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>滋賀</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>奈良</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>和歌山</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingState</field>
+        <operation>equals</operation>
+        <value>兵庫</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.Industry</field>
+        <operation>contains</operation>
+        <value>Manufacturing,Engineering,Machinery,Electronics</value>
+    </ruleItems>
+</Territory2Rule>
